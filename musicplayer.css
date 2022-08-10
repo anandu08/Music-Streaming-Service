@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(145, 218, 205);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+#navbar ul {
+    display: flex;
+    margin-left: 18px;
+}
+
+#navbar ul li {
+    position: relative;
+    list-style: none;
+    padding: 16px 22px;
+}
+
+#navbar ul li a {
+    display: block;
+    border-radius: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(150, 219, 105);
+}
+
+.signin {
+    position: absolute;
+    right: 38px;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid grey;
+    background-color: rgb(2, 2, 2);
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#search {
+    position: absolute;
+    right: 190px;
+    top: 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 150px;
+    padding: 8px;
+}
+
+.songbanner {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 64px;
+    padding-left: 23px;
+    height: 40px;
+    z-index: 2;
+    background-color: beige;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    padding: 0px;
+    position: relative;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    background: url('girl-1990347_1920.jpg') no-repeat center center/cover;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 32px;
+    border: 2px solid teal;
+    height: 190px;
+    width: 190px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.809);
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.songitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.songitem img {
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.bottom {
+    position: fixed;
+    padding: 12px;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myprogressbar {
+    width: 50vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.songplay i {
+    cursor: pointer;
+}
+
+.songinfo {
+    position: absolute;
+    top: 3vw;
+    left: 8vw;
+    font-size: 20px;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}

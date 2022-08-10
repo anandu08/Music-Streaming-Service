@@ -1,0 +1,125 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+        <style>
+            body {
+                background: url('eric-nopanen-8e0EHPUx3Mo-unsplash.jpg') no-repeat center center/cover;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 590px;
+            }
+            
+            .loginform {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 32px;
+                width: 333px;
+            }
+            
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 17px;
+            }
+            
+            .btn button {
+                height: 42px;
+                width: 100px;
+                border-radius: 22px;
+                border: 2px solid teal;
+                background-color: black;
+                color: white;
+            }
+            
+            .loginform::before {
+                content: "";
+                background-color: rgb(147 138 135 / 75%);
+                z-index: -1;
+                height: 120%;
+                position: absolute;
+                width: 138%;
+                border-radius: 34px;
+                opacity: 0.8;
+            }
+            
+            .form-action {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                font-size: 22px;
+                width: 333px;
+            }
+            
+            .form-action input {
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 32px;
+                height: 32px;
+                padding: 8px;
+            }
+            
+            .containerbutton {
+                display: flex;
+                cursor: pointer;
+            }
+            
+            #submitb {
+                padding-left: 60px;
+            }
+            
+            .btn a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                padding: 7px;
+            }
+        </style>
+        <script src="websiteregister.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="loginform">Log In
+
+                <form action="#">
+                    <div class="form-action">Enter Your Email
+                        <input type="email" placeholder="ABCDEF@example.com" id="email"pattern=".+@gmail.com"  size='30'required>
+                    </div>
+                    <div class="form-action">Enter Password
+                        <input type="password" placeholder="Enter your Password" id="pwd1">
+                    </div>
+                    <div class="containerbutton">
+                        <div class="btn" id="submitb">
+                            <button onclick="login()">
+                            <a href="#">Submit</a>
+                        </button>
+                        </div>
+
+                        <div class="btn">
+                            <button>
+                                <a href="websiteregister.html">Sign up</a>
+                            </button>
+                        </div>
+                    </div>
+                </form >
+            </div>
+        </div>
+    </body>
+
+
+
+    </html>

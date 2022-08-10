@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Music Player</title>
+    <link rel="stylesheet" href="musicplayer.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pngfind.com-music-icon-png-461939.png" alt="MusicIcon">
+        </div>
+        <ul>
+            <li>
+                <div class="item"><a href="#">Home</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="item"><a href="#">My Songs</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="item"><a href="#">All Songs</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="item"><a href="#">Recently Played</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="item"><a href="contactus.html">Contact Us</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="item"><a href="about_us.html">About Us</a>
+
+                </div>
+            </li>
+
+        </ul>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="signin">
+            <button class="btn"><a href="website.log.html"> Register / Sign In</a></button>
+        </div>
+
+    </nav>
+    <div class="songbanner">My Songs</div>
+    <div class="container">
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:00</b></span>
+                <div><i id="0" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover2.jfif" alt="1">
+                <span class="songname"><b>Ranjha</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="1" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover3.jpg" alt="1">
+                <span class="songname"><b>bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="2" class="far  songitemplay  fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>gh</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="3" class="far songitemplay   fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="4" class="far songitemplay   fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="5" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="6" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover1.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="7" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover2.jfif" alt="1">
+                <span class="songname"><b>Bekhayali</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="8" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="songitem">
+                <img src="covers/cover3.jpg" alt="1">
+                <span class="songname"><b>rdd</b></span>
+                <span class="timestamp" style="margin-left: 18px;"><b>05:34</b></span>
+                <div><i id="9" class="far songitemplay fa-2x fa-play-circle"></i></div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="bottom">
+            <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
+            <div class="icons">
+                <i class="fas fa-2x fa-step-backward" id=previous></i>
+                <i class="far  fa-2x fa-play-circle" id="masterplay"></i>
+                <i class="fas fa-2x fa-step-forward" id="next"></i>
+            </div>
+            <div class="songinfo">
+                <img src="playing.gif" alt="" width="50px" id="gif"> <span id="mastersongname">Bekhayali</span>
+            </div>
+        </div>
+        <script src="musicplayer.js"></script>
+        <script src="https://kit.fontawesome.com/7ef0ebeca6.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
